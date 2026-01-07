@@ -186,6 +186,7 @@ The trained Random Forest model has been exported along with:
 - `employee_department_encoder.pkl` - Department label encoder
 - `employee_job_role_encoder.pkl` - Job role label encoder
 
-These files enable real-time predictions through the Streamlit web application which can be found at the following address: 
+These files enable real-time predictions through the Streamlit web application which can be found at the following address: https://gsiabaccdscertification-jlmddyo3yajkgdprehopjt.streamlit.app/<img width="1301" height="74" alt="image" src="https://github.com/user-attachments/assets/3d1f6389-61c9-4ce7-9b69-f0fa0347beb5" />
+
 
 **Note:** This analysis addresses class imbalance through multiple techniques including stratified sampling, balanced class weights, and stratified K-fold cross-validation to ensure robust and fair model performance across all employee performance rating categories.
