@@ -4,13 +4,12 @@ A comprehensive machine learning project for predicting employee performance rat
 
 ## Project Overview
 
-This project analyzes employee data from INX Future Inc. to predict employee performance ratings (Good, Excellent, Outstanding) based on various employee attributes, work conditions, and satisfaction metrics. The analysis includes exploratory data analysis, feature engineering, machine learning model training, and a web-based deployment interface.
+This project analyses employee data from INX Future Inc. to predict employee performance ratings (Good, Excellent, Outstanding) based on various employee attributes, work conditions, and satisfaction metrics. The analysis includes exploratory data analysis, feature engineering, machine learning and deep learning model training, and a web-based deployment interface. Additional insights into departmental trends are also analysed and business recommendations given.
 
 ## Table of Contents
 
 - [Dataset](#dataset)
 - [Project Structure](#project-structure)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Methodology](#methodology)
 - [Key Findings](#key-findings)
@@ -51,68 +50,6 @@ Certification Project/
 │   └── employee_performance/
 └── Submission Directory Test/
 ```
-
-## Installation
-
-### Prerequisites
-- Python 3.8 or higher
-- pip package manager
-
-### Setup Instructions
-
-1. **Clone or download the project:**
-   ```bash
-   cd "Certified Data Scientist/Certification Project"
-   ```
-
-2. **Create a virtual environment (recommended):**
-   ```bash
-   python -m venv employee_performance
-   ```
-
-3. **Activate the virtual environment:**
-   - Windows: `employee_performance\Scripts\activate`
-   - Mac/Linux: `source employee_performance/bin/activate`
-
-4. **Install required packages:**
-   ```bash
-   pip install -r Model Deployment/requirements.txt
-   ```
-
-### Required Libraries
-
-- pandas
-- numpy
-- matplotlib
-- seaborn
-- scikit-learn
-- xgboost
-- tensorflow
-- joblib
-- streamlit (for web deployment)
-
-## Usage
-
-### Running the Jupyter Notebook
-
-1. Launch Jupyter Notebook or VS Code
-2. Open `Gabriel Smith INX Performance Prediction Code Notebook.ipynb`
-3. Run cells sequentially to reproduce the analysis
-
-### Running the Web Application
-
-1. Navigate to the Model Deployment folder:
-   ```bash
-   cd "Model Deployment"
-   ```
-
-2. Launch the Streamlit app:
-   ```bash
-   streamlit run employee_performance_app.py
-   ```
-
-3. Open your browser to the provided local URL (typically http://localhost:8501)
-
 ## Methodology
 
 ### 1. Data Preprocessing
@@ -127,17 +64,16 @@ Certification Project/
 - **Relationships:** Investigated correlations between features
 - **Principal Component Analysis:** Assessed feature separability
 
-### 3. Feature Engineering
-- Conducted feature importance analysis using XGBoost
-- Reduced feature set from 23 to 10 most important features
-- Created scaled versions of datasets
-
-### 4. Machine Learning Models Evaluated
+### 3. Machine Learning Models Evaluated
 - Logistic Regression
 - Decision Tree Classifier
 - Random Forest Classifier
 - Gradient Boosting Classifier
 - XGBoost Classifier
+
+### 4. Feature Engineering
+- Conducted feature importance analysis using XGBoost
+- Reduced feature set from 23 to 10 most important features
 
 ### 5. Deep Learning
 - Built Sequential Neural Network with:
@@ -250,17 +186,6 @@ The trained Random Forest model has been exported along with:
 - `employee_department_encoder.pkl` - Department label encoder
 - `employee_job_role_encoder.pkl` - Job role label encoder
 
-These files enable real-time predictions through the Streamlit web application.
-
-## Author
-
-**Gabriel Smith**  
-Certified Data Scientist Certification Project
-
-## License
-
-This project is part of a certification program and is intended for educational purposes.
-
----
+These files enable real-time predictions through the Streamlit web application which can be found at the following address: 
 
 **Note:** This analysis addresses class imbalance through multiple techniques including stratified sampling, balanced class weights, and stratified K-fold cross-validation to ensure robust and fair model performance across all employee performance rating categories.
